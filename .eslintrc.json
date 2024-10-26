@@ -22,6 +22,8 @@
   },
   "rules": {
     "prettier/prettier": ["error"],
+    "@typescript-eslint/no-use-before-define": "off", //emotion 코드를 뒤에 선언하기 위해 Off
+    "@typescript-eslint/no-namespace": "off", // emotion 컴포넌트들은 namespace에 그룹핑해두기 위해 Off
     "react/react-in-jsx-scope": "off", // Next.js에서는 필요 없는 옵션
     "import/prefer-default-export": "off", // export default를 사용하는 것이 사용 위치를 찾기 더 번거롭기 때문에 Off
     "react/function-component-definition": "off", // 함수형 컴포넌트를 정의할 때 function 키워드를 사용하지 않아도 되도록 Off
