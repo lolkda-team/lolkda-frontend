@@ -22,6 +22,6 @@ export const SiteToggleButton = ({ path }: TProps) => {
 
 const S = {
   Wrapper: styled.div`
-
+    margin-left: 10px;
   `,
 };

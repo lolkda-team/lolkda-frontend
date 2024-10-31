@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import localFont from 'next/font/local';
+import Link from 'next/link';
 
 const Tenada = localFont({
   src: "../../../public/fonts/Tenada.ttf",
@@ -9,7 +10,7 @@ const Tenada = localFont({
 
 export const Logo = () => {
   return(
-    <S.Logo className={Tenada.className}>LOLKDA</S.Logo>
+    <S.Logo className={Tenada.className}><Link href={'/'}>LOLKDA</Link></S.Logo>
   )
 }
 
@@ -18,5 +19,6 @@ const S = {
     font-size: 36px;
     font-weight: bold;
     cursor: pointer;
+    padding-top: 10px;
   `,
 };
