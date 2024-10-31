@@ -5,6 +5,7 @@ import { Logo } from '@/components/atoms/Logo';
 import styled from '@emotion/styled';
 import { ThemeToggleButton } from '@/components/atoms/ThemeToggleButton';
 import { SiteToggleButton } from '@/components/atoms/SiteToggleButton';
+import { LanguageButton } from '@/components/atoms/LanguageButton';
 
 export const Header = () => {
   const path = usePathname();
@@ -16,6 +17,7 @@ export const Header = () => {
         <SiteToggleButton path={path} />
       </S.Stack>
       <S.Stack>
+        <LanguageButton />
         <ThemeToggleButton />
       </S.Stack>
     </S.Wrapper>
