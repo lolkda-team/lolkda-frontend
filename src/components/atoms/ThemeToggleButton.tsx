@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 import { useThemeContext } from '@/contexts/useThemeContext';
 // eslint-disable-next-line no-empty-pattern
 const MaterialUISwitch = styled(Switch)(({}) => ({
-  width: 62,
-  height: 34,
+  width: 60,
+  height: 32,
   padding: 7,
   '& .MuiSwitch-switchBase': {
     margin: 1,
@@ -28,8 +28,8 @@ const MaterialUISwitch = styled(Switch)(({}) => ({
   '& .MuiSwitch-thumb': {
     backgroundColor: '#000',
     border: '1px solid #aab4be',
-    width: 32,
-    height: 32,
+    width: 30,
+    height: 30,
     '&::before': {
       content: "''",
       position: 'absolute',

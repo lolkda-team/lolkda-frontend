@@ -20,7 +20,7 @@ export const LanguageButton = () => {
   return(
     <S.Wrapper>
       <S.Stack onClick={handleClick}>
-        <LanguageIcon style={{fontSize: '32px', color: theme.palette.text.secondary}} />
+        <LanguageIcon style={{fontSize: '30px', color: theme.palette.text.primary}} />
       </S.Stack>
       <Menu
         id="basic-menu"

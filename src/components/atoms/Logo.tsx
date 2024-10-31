@@ -16,9 +16,9 @@ export const Logo = () => {
 
 const S = {
   Logo: styled.h1`
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
-    padding-top: 10px;
+    padding-top: 6px;
   `,
 };

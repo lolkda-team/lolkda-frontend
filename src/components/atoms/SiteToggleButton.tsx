@@ -29,28 +29,28 @@ export const SiteToggleButton = ({ path }: TProps) => {
 
 const S = {
   Wrapper: styled.div`
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   `,
   Link: styled(Link)<{ isActive: boolean, theme: PaletteType }>`
-    font-size: 14px;
+    font-size: 12px;
     font-weight: ${({ isActive }) => (isActive ? 'bold' : 'normal')};
     color: ${({ isActive, theme }) => (isActive ? theme.text.primary : theme.text.secondary)};
       display: flex;
       align-items: center;
     &:hover {
-      color: ${({ isActive, theme }) => (isActive ? theme.text.primary : theme.text.secondary)};
+      color: ${({ theme }) => theme.text.primary};
       font-weight: bold;
     }
       &::after{
-          content: '';
-          display: block;
-          width: 1px;
-          height: 18px;
-          background: ${({ theme }) => theme.text.primary};;
-          margin: 0 10px;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 14px;
+        background: ${({ theme }) => theme.text.secondary};;
+        margin: 0 10px;
       }
       &:last-child{
           &::after{
