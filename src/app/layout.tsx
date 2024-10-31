@@ -6,7 +6,7 @@ import { Providers } from '@/app/provider';
 import { Header } from '@/components/organisms/Header';
 
 export const metadata: Metadata = {
-  title: "LOLKDA",
+  title: "LOLKDA | 롤 전적 검색",
   description: "롤 전적 검색",
 };
 

@@ -1,4 +1,3 @@
-// themeColors.ts
 export const lightPalette = {
   primary: {
     main: '#1976d2',
@@ -29,6 +28,6 @@ export const darkPalette = {
   },
   text: {
     primary: '#ffffff',
-    secondary: '#aaaaaa',
+    secondary: '#d3d3d3',
   },
 };

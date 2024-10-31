@@ -17,8 +17,8 @@ export const Header = () => {
         <SiteToggleButton path={path} />
       </S.Stack>
       <S.Stack>
-        <LanguageButton />
         <ThemeToggleButton />
+        <LanguageButton />
       </S.Stack>
     </S.Wrapper>
   )
