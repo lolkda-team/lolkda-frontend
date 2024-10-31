@@ -1,7 +1,6 @@
 'use client';
 
 import styled from '@emotion/styled';
-import { ThemeToggleButton } from '@/components/atoms/ThemeToggleButton';
 
 export default function Home() {
   return (

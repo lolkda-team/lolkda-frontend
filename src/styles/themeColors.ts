@@ -11,7 +11,7 @@ export const lightPalette = {
   },
   text: {
     primary: '#000000',
-    secondary: '#555555',
+    secondary: '#6e6e6e',
   },
 };
 
