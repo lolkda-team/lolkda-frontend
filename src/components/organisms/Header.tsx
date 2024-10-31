@@ -13,7 +13,7 @@ export const Header = () => {
   return(
     <S.Wrapper>
       <S.Stack>
-        <Logo />
+        <Logo fontSize={'30px'} spacing={'1px'} />
         <SiteToggleButton path={path} />
       </S.Stack>
       <S.Stack>
