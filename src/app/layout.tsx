@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import React from "react";
 import {Container} from "@mui/material";
 import { Providers } from '@/app/provider';
+import { Header } from '@/components/organisms/Header';
 
 export const metadata: Metadata = {
   title: "LOLKDA",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <Providers>
+          <Header />
           <Container maxWidth="lg">
               {children}
           </Container>

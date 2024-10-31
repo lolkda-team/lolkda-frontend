@@ -6,7 +6,6 @@ import { ThemeToggleButton } from '@/components/atoms/ThemeToggleButton';
 export default function Home() {
   return (
     <S.Wrapper>
-      <ThemeToggleButton />
       Home Page
     </S.Wrapper>
   );
