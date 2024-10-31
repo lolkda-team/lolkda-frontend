@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import React from "react";
 import {Container} from "@mui/material";
+import { Providers } from '@/app/provider';
 
 export const metadata: Metadata = {
   title: "LOLKDA",
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Container maxWidth="lg">
-            {children}
-        </Container>
+        <Providers>
+          <Container maxWidth="lg">
+              {children}
+          </Container>
+        </Providers>
       </body>
     </html>
   );

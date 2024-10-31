@@ -1,10 +1,14 @@
 'use client';
 
 import styled from '@emotion/styled';
+import { ThemeToggleButton } from '@/components/atoms/ThemeToggleButton';
 
 export default function Home() {
   return (
-    <S.Wrapper>Home Page</S.Wrapper>
+    <S.Wrapper>
+      <ThemeToggleButton />
+      Home Page
+    </S.Wrapper>
   );
 }
 
