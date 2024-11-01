@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import styled from '@emotion/styled';
-import { siteButton } from '@/data/constData';
 import { useTheme } from '@mui/material/styles';
+
+import { siteButton } from '@/data/constData';
 import { PaletteType } from '@/types/paletteType';
 
 type TProps = {
@@ -17,7 +18,7 @@ export const SiteToggleButton = ({ path }: TProps) => {
         <S.Link
           href={item.path}
           key={item.path}
-          isActive={path === item.path}
+          className={path === item.path ? 'active' : ''}
           theme={theme.palette}
         >
           {item.title}
@@ -34,28 +35,33 @@ const S = {
     align-items: center;
     justify-content: center;
   `,
-  Link: styled(Link)<{ isActive: boolean, theme: PaletteType }>`
+  Link: styled(Link)<{ theme: PaletteType }>`
     font-size: 12px;
-    font-weight: ${({ isActive }) => (isActive ? 'bold' : 'normal')};
-    color: ${({ isActive, theme }) => (isActive ? theme.text.primary : theme.text.secondary)};
-      display: flex;
-      align-items: center;
+    font-weight: normal;
+    color: ${({ theme }) => theme.text.secondary};
+    display: flex;
+    align-items: center;
+      
+    &.active{
+      font-weight: bold;
+      color: ${({ theme }) => theme.text.primary};
+    }
     &:hover {
       color: ${({ theme }) => theme.text.primary};
       font-weight: bold;
     }
-      &::after{
-        content: '';
-        display: block;
-        width: 1px;
-        height: 14px;
-        background: ${({ theme }) => theme.text.secondary};;
-        margin: 0 10px;
-      }
-      &:last-child{
-          &::after{
-              display: none;
-          }
-      }
+    &::after{
+      content: '';
+      display: block;
+      width: 1px;
+      height: 14px;
+      background: ${({ theme }) => theme.text.secondary};;
+      margin: 0 10px;
+    }
+    &:last-child{
+        &::after{
+            display: none;
+        }
+    }
   `,
 };
