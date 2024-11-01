@@ -9,10 +9,13 @@ import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid2';
 
 import { Logo } from '@/components/atoms/Logo';
 import { PaletteType } from '@/types/paletteType';
 import { useTheme } from '@mui/material/styles';
+import { RotateChamp } from '@/components/pages/home/RotateChamp';
+import { Notice } from '@/components/pages/home/Notice';
 
 export default function HomePage() {
   const theme = useTheme();
@@ -46,7 +49,10 @@ export default function HomePage() {
       <S.ButtonWrap theme={theme.palette}>
         <Button variant="contained">Enter</Button>
       </S.ButtonWrap>
-      <Divider variant="middle" component="div" style={{padding: '20px 0'}}/>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 3, md: 3 }} style={{marginTop: '100px'}}>
+        <Grid size={6}><RotateChamp /></Grid>
+        <Grid size={6}><Notice /></Grid>
+      </Grid>
     </S.Wrapper>
   );
 }
@@ -56,7 +62,7 @@ const S = {
     text-align: center;
     margin-top: 80px;
     background-color: ${({ theme }) => theme.background.paper};
-    padding: 80px 20px;
+    padding: 80px 40px;
     border-radius: 30px;
     box-shadow: 0 0 10px #00000014;
   `,
