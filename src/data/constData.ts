@@ -1,3 +1,4 @@
+// 사이트 메뉴
 export const siteButton = [
   {
     title: '전적 검색',

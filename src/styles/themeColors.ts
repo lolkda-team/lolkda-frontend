@@ -1,4 +1,6 @@
-export const lightPalette = {
+import { PaletteType } from '@/types/paletteType';
+
+export const lightPalette: PaletteType = {
   primary: {
     main: '#1976d2',
   },
@@ -6,8 +8,8 @@ export const lightPalette = {
     main: '#dc004e',
   },
   background: {
-    default: '#ffffff',
-    paper: '#f5f5f5',
+    default: '#f3f3f3',
+    paper: '#ffffff'
   },
   text: {
     primary: '#000000',
@@ -15,7 +17,7 @@ export const lightPalette = {
   },
 };
 
-export const darkPalette = {
+export const darkPalette: PaletteType = {
   primary: {
     main: '#90caf9',
   },
@@ -23,8 +25,8 @@ export const darkPalette = {
     main: '#f48fb1',
   },
   background: {
-    default: '#00152b',
-    paper: '#1d1d1d',
+    default: '#1c1c1c',
+    paper: '#1c1c1c'
   },
   text: {
     primary: '#ffffff',

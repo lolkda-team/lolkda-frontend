@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 export default function DuoPage() {
   return(
     <S.Wrapper>
-      아직 준비중입니다.
+      준비중입니다.
     </S.Wrapper>
   )
 }

@@ -32,7 +32,7 @@ export const LanguageButton = () => {
         }}
       >
         <MenuItem onClick={handleClose}>Korean</MenuItem>
-        <MenuItem onClick={handleClose}>English</MenuItem>
+        {/*<MenuItem onClick={handleClose}>English</MenuItem>*/}
       </Menu>
     </S.Wrapper>
   )

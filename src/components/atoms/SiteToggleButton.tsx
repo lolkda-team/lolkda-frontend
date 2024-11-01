@@ -41,7 +41,6 @@ const S = {
     color: ${({ theme }) => theme.text.secondary};
     display: flex;
     align-items: center;
-      
     &.active{
       font-weight: bold;
       color: ${({ theme }) => theme.text.primary};
@@ -59,9 +58,9 @@ const S = {
       margin: 0 10px;
     }
     &:last-child{
-        &::after{
-            display: none;
-        }
+      &::after{
+          display: none;
+      }
     }
   `,
 };
